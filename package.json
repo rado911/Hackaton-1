@@ -14,10 +14,15 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "reactstrap": "^8.7.1",
 =======
     "uuid": "^8.3.1",
 >>>>>>> dcf4858028cfc9821e9dd7c96672c3f305b03709
+=======
+    "uuid": "^8.3.1",
+    "reactstrap": "^8.7.1",
+>>>>>>> a37b83bdbb6e59fc72d318c5825c795b11913922
     "web-vitals": "^0.2.4"
   },
   "scripts": {

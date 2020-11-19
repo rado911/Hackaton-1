@@ -6,7 +6,11 @@ import {
 import React from 'react';
 import EntryPage from "./entry-page";
 import NavBar1 from "./navbar";
+<<<<<<< HEAD
 import MainComponent from "./MainComponent";
+=======
+import ArtMain from "./ArtMain";
+>>>>>>> a37b83bdbb6e59fc72d318c5825c795b11913922
 
 
 function Routerfunc() {
@@ -17,6 +21,7 @@ function Routerfunc() {
             <Switch>
             <Route exact path="/search" component={MainComponent} />
             <Route exact path="/" component={EntryPage} />
+         
             </Switch>
         </Router>
     )
