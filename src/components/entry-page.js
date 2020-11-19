@@ -1,11 +1,13 @@
-import React, { useState, useContext, useEffect } from 'react';
-import ArtContext from '../context/ArtContext';
 import './entry-page.css'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
 
 
 const EntryPage = () => {
 
-    const {art} = useContext(ArtContext); 
     return(
         <>
         <div className="textCont">

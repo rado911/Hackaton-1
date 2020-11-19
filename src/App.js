@@ -3,6 +3,7 @@ import ArtContext from './context/ArtContext';
 import Axios from 'axios';
 import './App.css';
 import EntryPage from './components/entry-page';
+import Routerfunc from './components/routerfunc';
 
 
 function App() {
@@ -20,7 +21,7 @@ useEffect(() => {
   
   return (
   <ArtContext.Provider value={{art : art}}>
-    <EntryPage/>
+    <Routerfunc />
   </ArtContext.Provider>
   );
 }
