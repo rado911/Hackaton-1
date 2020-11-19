@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Card, CardImg, CardBody,
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 
-const DisplayArt = ({webImage, title, principalOrFirstMaker}) => {
+const DisplayArt = ({webImage, title, principalOrFirstMaker, objectNumber}) => {
   return (
     
       <Card style={{maxHeight:"600px", width:"20%", textAlign:"center", margin:"2%"}}>
@@ -12,7 +13,10 @@ const DisplayArt = ({webImage, title, principalOrFirstMaker}) => {
         <CardBody>
           <CardTitle tag="h5">{title}</CardTitle>
   <CardSubtitle tag="h6" className="mb-2 text-muted">{principalOrFirstMaker}</CardSubtitle>
-          <Button>Button</Button>
+  <Link to={{pathname:`/search/${objectNumber}`,
+            state:"select"}}>
+                <Button>Button</Button>
+    </Link>
         </CardBody>
       </Card>
     
