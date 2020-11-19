@@ -6,6 +6,7 @@ import {
 import React from 'react';
 import EntryPage from "./entry-page";
 import NavBar1 from "./navbar";
+import MainComponent from "./MainComponent";
 
 
 function Routerfunc() {
@@ -14,6 +15,7 @@ function Routerfunc() {
         <Router>
             <NavBar1 />
             <Switch>
+            <Route exact path="/search" component={MainComponent} />
             <Route exact path="/" component={EntryPage} />
             </Switch>
         </Router>

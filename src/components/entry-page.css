@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10%;
 
 }
 
@@ -27,11 +28,12 @@
     margin-top: 10%;
 }
 
-body{
+.background{
     background: url(https://lh3.googleusercontent.com/J-mxAE7CPu-DXIOx4QKBtb0GC4ud37da1QK7CzbTIDswmvZHXhLm4Tv2-1H3iBXJWAW_bHm7dMl3j5wv_XiWAg55VOM=s0) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
+    height: 95.5vh;
     }
