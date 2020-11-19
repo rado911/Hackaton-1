@@ -7,7 +7,13 @@ function ArtMain(props) {
 
     return(
      <div>
-         {art.map(e=> <h1>{e.title}</h1>)}
+         {art.map(e=> {
+             return (
+                 <div>
+         <h1>{e.title}</h1>
+         <img src={e.webImage.url} alt={e.webImage.id}/>
+         </div>
+         )})}
      </div>
     )
 }
