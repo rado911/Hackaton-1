@@ -9,10 +9,15 @@
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+<<<<<<< HEAD
     "reactstrap": "^8.7.1",
+=======
+    "uuid": "^8.3.1",
+>>>>>>> dcf4858028cfc9821e9dd7c96672c3f305b03709
     "web-vitals": "^0.2.4"
   },
   "scripts": {
