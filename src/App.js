@@ -10,7 +10,7 @@ function App() {
   
 useEffect(() => {
   getArt();
-})
+}, [])
 
   function getArt() {
     Axios.get('https://www.rijksmuseum.nl/api/en/collection?key=mXKxHvz4&?verb=ListRecords&from=1401-01-10/1601-01-10&ps=100')
@@ -21,7 +21,10 @@ useEffect(() => {
   return (
   <ArtContext.Provider value={{art : art}}>
     <ArtMain/>
+    {/* <MainComponent /> */}
   </ArtContext.Provider>
+     
+  
   );
 }
 
