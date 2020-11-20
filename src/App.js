@@ -7,13 +7,14 @@ import Routerfunc from './components/routerfunc';
 
 function App() {
   const [art, setArt] = useState([]);
-  const [query, setQuery]=useState('0')
+  const [query]=useState('0')
   const [cowBid, setCowBid] = useState(0);
 
  
   
 useEffect(() => {
   getArt();
+// eslint-disable-next-line react-hooks/exhaustive-deps
 },[])
 
   function getArt() {

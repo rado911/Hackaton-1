@@ -5,7 +5,7 @@ import DisplayArt from './DisplayArt'
 import './MainComponent.css'
 
 
-const SearchBar = () => {
+const SearchBar = (props) => {
 
 const [search, setSearch] = useState ('')
 const [query, setQuery]= useState('0')
@@ -16,6 +16,7 @@ const getData = () => {
            .then(resp => setSelect(resp.data.artObjects))
            };
 
+       // eslint-disable-next-line react-hooks/exhaustive-deps
        useEffect(() => { query.length > 1 && getData()}, [query])
        useEffect(() => { console.log(select)}, [select])
 
