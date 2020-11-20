@@ -8,7 +8,7 @@ import './MainComponent.css'
 const SearchBar = (props) => {
 
 const [search, setSearch] = useState ('')
-const [query, setQuery]=useState('0')
+const [query, setQuery]= useState('0')
 const [select, setSelect] = useState ([])
 
 const getData = () => {
@@ -16,7 +16,7 @@ const getData = () => {
            .then(resp => setSelect(resp.data.artObjects))
            };
 
-       useEffect(() => { getData()}, [query])
+       useEffect(() => { query.length > 1 && getData()}, [query])
        useEffect(() => { console.log(select)}, [select])
 
 const handleChange = (e) => {
@@ -25,7 +25,7 @@ const handleChange = (e) => {
    
 }
     return (
-        <>
+        <div className="background2">
 <h1 className="searchtitle">Search For Art!</h1>
 <form className="searchform">
 <input type="text" name="searchbar" onChange={(e) => setSearch(e.target.value)}></input>
@@ -35,7 +35,7 @@ const handleChange = (e) => {
 <div className="grid">
 {select.map(e => <DisplayArt {...e}/> )}
 </div>
-</>
+</div>
     )
 }
 export default SearchBar 

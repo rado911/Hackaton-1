@@ -19,7 +19,7 @@ const NavBar1 = (props) => {
 
   return (
     <div>
-      <Navbar color="dark" light expand="md" style={{padding:"10px"}}>
+      <Navbar color="dark" light expand="md" style={{padding:"10px", opacity:"0.5"}}>
         <Link to="/" style={{marginRight:"2%", color:"white", fontSize:"1.25rem"}}>Home</Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

@@ -11,16 +11,13 @@ const EntryPage = () => {
         return(
         <div className="background">
         <div className="textCont">
+
+        <h1 className="title">Welcome to Art Markplaats</h1>
+        
             <Link to={{pathname: '/search'}}>
-        <h1 className="title">Buy Art</h1>
+        <h1 className="nextpage">Buy Art</h1>
             </Link>
         
-        <h1 className="title">Sell Art</h1>
-        </div>
-
-        <div className="backgroundInfo">
-            <p>Nachtwacht, Schutters van wijk II onder leiding van kapitein Frans Banninck Cocq</p>
-            <p>Rembrandt van Rijn</p>
         </div>
         </div>
     )

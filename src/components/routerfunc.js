@@ -14,7 +14,7 @@ function Routerfunc() {
     return (
 
         <Router>
-            <NavBar1 />
+            <NavBar1 className="navbar"/>
             <Switch>
             <Route exact path="/search/:objectNumber" component={ArtMain} />
             <Route exact path="/search" component={MainComponent} />

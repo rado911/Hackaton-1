@@ -2,11 +2,57 @@
     text-align: center;
     color: white;
     font-size: 6rem;
-    margin-top: 10%;
+    -webkit-animation: fadein 4s;  
+    -moz-animation: fadein 4s; 
+    -ms-animation: fadein 4s;       
+    -o-animation: fadein 4s; 
+    animation: fadein 4s;
 
 }
 
-.title:hover{
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+  
+
+.nextpage{
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+    margin-top: 50%;
+    -webkit-animation: fadein 4s;  
+    -moz-animation: fadein 4s; 
+    -ms-animation: fadein 4s;       
+    -o-animation: fadein 4s; 
+    animation: fadein 4s;
+}
+
+.nextpage:hover{
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.4)
@@ -20,13 +66,7 @@
 
 }
 
-.backgroundInfo{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin-left: 2%;
-    margin-top: 10%;
-}
+
 
 .background{
     background: url(https://lh3.googleusercontent.com/J-mxAE7CPu-DXIOx4QKBtb0GC4ud37da1QK7CzbTIDswmvZHXhLm4Tv2-1H3iBXJWAW_bHm7dMl3j5wv_XiWAg55VOM=s0) no-repeat center center fixed; 
@@ -35,5 +75,7 @@
     -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
-    height: 95.5vh;
+    height: 94.7vh;
     }
+
+  
