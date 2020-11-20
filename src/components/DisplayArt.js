@@ -15,7 +15,7 @@ const DisplayArt = ({webImage, title, principalOrFirstMaker, objectNumber}) => {
           <CardTitle tag="h5">{title}</CardTitle>
   <CardSubtitle tag="h6" className="mb-2 text-muted">{principalOrFirstMaker}</CardSubtitle>
   <Link to={{pathname:`/search/${objectNumber}`,
-            state:"select"}}>
+            state: {webImage}}}>
                 <Button className="seeMore">See More</Button>
     </Link>
         </CardBody>

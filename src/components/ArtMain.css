@@ -1,9 +1,14 @@
 
 
-.image {
+.imagecont {
     width: 40%;
     height: 400px;
     border: 2px solid black;
+}
+
+.singleimage{
+    height:100%;
+    width: 100%;
 }
 
 .form {
@@ -13,17 +18,25 @@
     border: 2px solid black;
     width: 40%;
     margin-left: 180px;
+    background-color: grey;
+    border-radius: 10px;
+    color: white;
 }
 .price{
     width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: white;
 }
 
 .bids {
     border: 2px solid black;
     width: 40%;
+    color: white;
+    background-color: grey;
+    border-radius: 10px;
+    padding-top: 10px;
 }
 
 .artPiece {
@@ -47,4 +60,15 @@
     border: 2px solid black;
     width: 40%;
     height: 400px;
+    text-align: center;
+    font-size: larger;
+    padding: 10px;
+    background: grey;
+    color: white;
+    border-radius: 10px;
+}
+
+.background3{
+    background: black;
+    padding: 10px;
 }

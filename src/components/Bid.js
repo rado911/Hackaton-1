@@ -16,7 +16,7 @@ const Bid = ({addBidder}) => {
             <h3 style={{alignSelf:'center'}}>Your bid</h3>
             <label><input type="text" value={bidder} placeholder="Name" name="name" onChange={(e) => setBidder(e.target.value)} /></label>
             <label><input type="email" name="email" placeholder="E-mail" /></label>
-            <label><input type="text" name="adress" placeholder="Adress"/></label>
+            <label><input type="text" name="adress" placeholder="Address"/></label>
             <label><input type="text" value={bid} name="bid" placeholder="Your Bid" onChange={(e) => setBid(e.target.value)} /> </label>
             <div>
                 <button><img alt="cow" style={{ width: '50px' }} src="https://cdn.pixabay.com/photo/2012/04/16/11/21/cow-35561_960_720.png"></img></button>

@@ -14,12 +14,11 @@ function Routerfunc() {
     return (
 
         <Router>
-            <NavBar1 className="navbar"/>
+            <NavBar1/>
             <Switch>
             <Route exact path="/search/:objectNumber" component={ArtMain} />
             <Route exact path="/search" component={MainComponent} />
             <Route exact path="/" component={EntryPage} />
-         
             </Switch>
         </Router>
     )
