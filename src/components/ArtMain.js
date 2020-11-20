@@ -43,7 +43,7 @@ function ArtMain(props) {
 
             <div className="imgPrice">
                 <div className="imagecont">
-                    <img className="singleimage" src={props.location.state.webImage.url} />
+                    <img className="singleimage" alt={uuid()} src={props.location.state.webImage.url} />
 
                 </div>
                 <p className="info" style={{display: 'flex', flexDirection:"column", justifyContent: "center"}}>{singleArt.plaqueDescriptionEnglish}</p>
