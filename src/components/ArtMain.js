@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
-import ArtContext from '../context/ArtContext';
+import React, { useEffect, useState } from 'react';
 import './ArtMain.css';
 import { v1 as uuid } from 'uuid'
 import Bid from './Bid'
@@ -30,7 +29,6 @@ function ArtMain(props) {
     const addBidder = (bidder, bid, country) => {
         setName([...name, { name: bidder, bid, id: uuid(), img: "https://images.ctfassets.net/f60q1anpxzid/asset-018ee8552d40f140d606f574de6bc10c/57c9a73496a681a93263fe33016b8fc9/ren-name-6.jpg?fm=jpg&fl=progressive&q=50&w=1200", country}]);
     }
-    const { art } = useContext(ArtContext);
 
     const priceGenerator = () => {
         const cow = Math.floor((Math.random() * 10) + 1);

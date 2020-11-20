@@ -14,7 +14,7 @@ function App() {
   
 useEffect(() => {
   getArt();
-}, [])
+},[])
 
   function getArt() {
     Axios.get(`https://www.rijksmuseum.nl/api/nl/collection?key=mXKxHvz4&q=renaissance+${query}`)
@@ -26,7 +26,7 @@ useEffect(() => {
   <ArtContext.Provider value={{art, cow : cowBid, setCow : setCowBid}}>
     <Routerfunc />
   </ArtContext.Provider>
-  );
+  )
 }
 
 export default App;
