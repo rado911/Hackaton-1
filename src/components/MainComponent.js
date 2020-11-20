@@ -12,7 +12,7 @@ const [query, setQuery]= useState('0')
 const [select, setSelect] = useState ([])
 
 const getData = () => {
-           axios.get(`https://www.rijksmuseum.nl/api/nl/collection?key=mXKxHvz4&imgonly=true&q=${query}`)
+           axios.get(`https://www.rijksmuseum.nl/api/en/collection?key=mXKxHvz4&imgonly=true&q=${query}`)
            .then(resp => setSelect(resp.data.artObjects))
            };
 
