@@ -5,7 +5,7 @@ import DisplayArt from './DisplayArt'
 import './MainComponent.css'
 
 
-const SearchBar = (props) => {
+const SearchBar = () => {
 
 const [search, setSearch] = useState ('')
 const [query, setQuery]= useState('0')

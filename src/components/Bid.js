@@ -1,11 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
-import ArtContext from '../context/ArtContext';
+import React, { useState } from 'react';
 
 const Bid = ({addBidder}) => {
     const [bidder, setBidder] = useState('');
     const [bid, setBid] = useState('');
     const [country, setCountry] = useState('');
-    const {cow, setCow} = useContext(ArtContext);
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
