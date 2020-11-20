@@ -41,7 +41,7 @@ function ArtMain(props) {
 
         <div className="background3">
             
-            <h1 style={{ display: 'flex', marginTop: '20px', marginLeft: '20px', color: "white", opacity: "0.7" }}>{singleArt.title}</h1>
+            <h1 style={{ display: 'flex', marginTop: '20px', marginLeft: '20px', color: "white" }}>{singleArt.title}</h1>
 
             <div className="imgPrice">
                 <div className="imagecont">
