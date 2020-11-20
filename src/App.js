@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
+import ArtContext from './context/ArtContext';
+import Axios from 'axios';
 import './App.css';
+import Routerfunc from './components/routerfunc';
+
 
 function App() {
+  const [art, setArt] = useState([]);
+  const [query, setQuery]=useState('0')
+
+  
+useEffect(() => {
+  getArt();
+}, [])
+
+  function getArt() {
+    Axios.get(`https://www.rijksmuseum.nl/api/nl/collection?key=mXKxHvz4&q=renaissance+${query}`)
+      .then((res) => setArt(res.data.artObjects))
+      ;
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <ArtContext.Provider value={{art}}>
+    <Routerfunc />
+  </ArtContext.Provider>
   );
 }
 
